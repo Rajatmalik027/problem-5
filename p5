@@ -1,0 +1,18 @@
+class Shape():
+    def _init_(self):
+        pass
+    
+    def area (self):
+        return 0
+class Square(Shape):
+        def _init_(self,length = 0):
+            Shape._init_(self)
+            self.length = length
+            
+        def area (self):
+            return self.length*self.length
+        
+Asqr = Square(5)
+print(Asqr.area())
+        
+print(Square().area())
